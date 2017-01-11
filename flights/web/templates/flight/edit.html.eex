@@ -1,0 +1,6 @@
+<h2>Edit flight</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: flight_path(@conn, :update, @flight) %>
+
+<%= link "Back", to: flight_path(@conn, :index) %>
